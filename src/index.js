@@ -1,15 +1,9 @@
 /**
- * The Enty point app
+ * The entry point
  */
-export default class App {
-    constructor (options) {
-        
-    }
 
-    /**
-     * Init the app
-     */
-    init () {
-        
-    }
-}
+import App from './app.js';
+
+window.addEventListener('load', () => {
+    const app = new App ();
+});
