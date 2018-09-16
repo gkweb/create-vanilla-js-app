@@ -6,7 +6,7 @@ A very basic vanilla js boilerplate:
 - Webpack 4
 - Es6 / Babel
 
-Please keep in mind, This is a helper for me to start project from. I've tried to keep as clean as possible. Add your own packages to suit your own workflow. 
+Please keep in mind, This is a helper for me to start projects from therefore - I've tried to keep as clean as possible. Add your own packages to suit your own workflow. 
 
 ### Start development server with:
 
