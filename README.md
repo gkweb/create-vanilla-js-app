@@ -1,4 +1,4 @@
-# create-vanilla-app
+# create-vanilla-js-app
 
 A very basic vanilla js boilerplate:
 
