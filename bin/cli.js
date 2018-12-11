@@ -79,15 +79,10 @@ function createApplication(app_name, path) {
 
     console.log();
     console.log('   install dependencies:');
-    console.log('     %s cd %s && npm install', prompt, path);
+    console.log('     %s cd %s && yarn', prompt, path);
     console.log();
-    console.log('   run the app:');
-
-    if (launchedFromCmd()) {
-      console.log('     %s SET DEBUG=koa* & npm start', prompt, app_name);
-    } else {
-      console.log('     %s DEBUG=%s:* npm start', prompt, app_name);
-    }
+    console.log('   run as development:');
+    console.log('    %s yarn run start:dev', prompt, app_name);
 
     console.log();
   }
@@ -100,6 +95,7 @@ function createApplication(app_name, path) {
   var appComponent = loadTemplate('src/components/app/index.js');
   var editorConfig = loadTemplate('.editorconfig');
   var npmRc = loadTemplate('.npmrc');
+  var readMe = loadTemplate('README.md');
 
   mkdir(path, function(){
     mkdir(path + '/src');
@@ -121,14 +117,14 @@ function createApplication(app_name, path) {
         , "dependencies": {}
         , "devDependencies": {
             "babel-cli": "^6.26.0",
-            "babel-core": "^6.26.3",
-            "babel-loader": "^7.1.5",
+            "babel-core": "^6.26.0",
+            "babel-loader": "^7.1.0",
             "babel-preset-env": "^1.7.0",
             "webpack": "^4.16.0",
             "webpack-cli": "^3.0.0",
             "webpack-dev-server": "^3.1.0",
             "css-loader": "^2.0.0",
-            "style-loader": "^0.23.1"
+            "style-loader": "^0.23.0"
             }
         }
 
@@ -136,6 +132,7 @@ function createApplication(app_name, path) {
         pkg.dependencies = sortedObject(pkg.dependencies);
 
         // write files
+        write(path + '/README.md', readMe);
         write(path + '/package.json', JSON.stringify(pkg, null, 2));
         write(path + '/src/index.js', entry);
         write(path + '/.editorconfig', editorConfig);
