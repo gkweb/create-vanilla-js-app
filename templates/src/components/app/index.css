@@ -1,0 +1,7 @@
+[data-component=app] {
+  padding: 1em;
+  background-image: linear-gradient(90deg, #a8caba 0%, #5d4157 100%);
+  background-size: cover;
+  min-height: 10em;
+  color: #222;
+}

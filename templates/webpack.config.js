@@ -2,6 +2,7 @@ const path = require('path')
 var webpack = require('webpack')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+process.env.CVA_PORT = process.env.CVA_PORT || 9000
 
 const config = function (mode) {
     let conf = {
@@ -27,11 +28,14 @@ const config = function (mode) {
                     options: {}
                 }
             },
-            
+            {
+              test: /\.css$/,
+              use: ['style-loader', 'css-loader'],
+            },
         ]
         },
         output: {
-            path: path.resolve(__dirname, 'public/assets/'),
+            path: path.resolve(__dirname, 'public/bundle/'),
             filename: 'bundle.js',
             publicPath: '/',
         },
@@ -43,7 +47,7 @@ const config = function (mode) {
             contentBase: 'public',
             compress: true,
             hot: true,
-            port: 9000
+            port: process.env.CVA_PORT
         }
     }
 
