@@ -22,13 +22,14 @@
   "author": "gkweb",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^5.2.0",
+    "shelljs": "^0.8.3"
+  },
+  "dependencies": {
     "commander": "^2.19.0",
     "fs": "^0.0.1-security",
     "mkdirp": "^0.5.1",
-    "mocha": "^5.2.0",
     "readline": "^1.3.0",
-    "shelljs": "^0.8.3",
     "sorted-object": "^2.0.1"
-  },
-  "dependencies": {}
+  }
 }
