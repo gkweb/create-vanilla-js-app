@@ -2,6 +2,20 @@
 
 # Create Vanilla JS App
 
+# Installation
+
+## yarn
+`yarn global add create-vanilla-js-app`
+
+## npm
+`npm i -g create-vanilla-js-app`
+
+# Once installed globally
+
+`cva projectname`
+
+_creates boilerplate in `projectname` dir._
+
 # A very simple vanilla js boilerplate
 
 - Includes webpack HMR
@@ -9,11 +23,7 @@
 - Es6 / Babel
 - Webpack CSS loader / Style loader
 
-Please keep in mind, This is a helper for me to tinker with ideas and start projects from - I've tried to keep it as clean as possible. Add your own packages to suit your own workflow. The one thing I've ommited is `package-lock.json` generation. But you can add this back in by removing `.npmrc` before running `npm i`
-
-
-
-
+I've tried to keep it as clean as possible. Add your own packages to suit your own workflow. The one thing I've ommited is `package-lock.json` generation. But you can add this back in by removing `.npmrc` before running `npm i`
 
 ### First
 
