@@ -1,6 +1,6 @@
 {
   "name": "create-vanilla-js-app",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Vanilla javascript es6 generator with Babel, Webpack and HMR",
   "main": "src/index.js",
   "bin": {
