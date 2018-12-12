@@ -94,7 +94,7 @@ function createApplication(app_name, path) {
   var appComponentStyle = loadTemplate('src/components/app/index.css');
   var appComponent = loadTemplate('src/components/app/index.js');
   var editorConfig = loadTemplate('.editorconfig');
-  var npmRc = loadTemplate('.npmrc');
+  var npmRc = loadTemplate('npmrc');
   var readMe = loadTemplate('README.md');
 
   mkdir(path, function(){
