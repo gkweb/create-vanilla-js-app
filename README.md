@@ -10,7 +10,7 @@
 ## npm
 `npm i -g create-vanilla-js-app`
 
-# Once installed globally
+# Once installed
 
 `cva projectname`
 
