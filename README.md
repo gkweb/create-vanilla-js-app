@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/gkweb/create-vanilla-js-app.png?branch=master)](https://travis-ci.org/gkweb/create-vanilla-js-app)
 
-# Create Vanilla JS App
+# Create Vanilla JS App 🌴🌴🌴
 
 # Installation
 

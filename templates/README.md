@@ -1,4 +1,4 @@
-# Create Vanilla JS App
+# Create Vanilla JS App 🌴🌴🌴
 
 # A very simple vanilla js boilerplate
 
