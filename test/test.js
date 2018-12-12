@@ -10,7 +10,7 @@ beforeEach(async function() {
 });
 
 describe('CLI', function() {
-  it('Can generate app boilerplate globally', function() {      
+  it('Can generate app boilerplate', function() {      
     var generatedEntryPointJs = fs.readFileSync(__dirname + '/temp/demo1/src/index.js', 'utf-8')
 
     assert.equal((generatedEntryPointJs.length > 1), true);
