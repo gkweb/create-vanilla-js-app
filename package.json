@@ -3,6 +3,10 @@
   "version": "0.1.5",
   "description": "Vanilla javascript es6 generator with Babel, Webpack and HMR",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gkweb/create-vanilla-js-app"
+  },
   "bin": {
     "cva": "bin/cli.js"
   },
@@ -15,9 +19,10 @@
     "vanilla",
     "js",
     "create",
-    "js",
     "app",
-    "javascript"
+    "javascript",
+    "boilerplate",
+    "plain"
   ],
   "author": "gkweb",
   "license": "ISC",
